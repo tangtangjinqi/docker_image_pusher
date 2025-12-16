@@ -4,16 +4,3 @@ k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 xhofe/alist:latest
 #支持指定架构
 --platform=linux/arm64 xiaoyaliu/alist
-# 基础服务镜像
-redis:7.0
-postgres:14-alpine
-
-# 私有仓库组件（需提前授权）
-my-registry.com/internal-api:v1.2
-
-# 多架构支持
---platform=linux/amd64 prometheus/node-exporter:v1.5
---platform=linux/arm64 prometheus/node-exporter:v1.5
-
-# 注释掉的测试镜像（暂不同步）
-# test-image:dev
